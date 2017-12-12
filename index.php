@@ -2,24 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>exercice 4 partie 3 php</title>
+    <title>exercice 4 partie 5 php</title>
   </head>
   <body>
     <?php
-    function calculate() {
-      $number1 = 32;
-      $number2 = 42;
-      if ($number1 > $number2) {
-        return 'le premier nombre est plus grand';
-      }
-      elseif ($number1 < $number2) {
-        return 'le premier nombre est plus petit';
-      }
-      elseif ($number1 == $number2) {
-        return 'les deux nombres sont identiques';
-      }
-    }
-    echo calculate();
+    $month=['janvier','février','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','décembre'];
+    $month[7] = 'août';
+    print_r($month);
     ?>
   </body>
 </html>
