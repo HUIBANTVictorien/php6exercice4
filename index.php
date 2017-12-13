@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>exercice 4 partie 5 php</title>
+    <title>exercice 4 partie 6 php</title>
   </head>
   <body>
+    <a href="index.php?langage=PHP&amp;serveur=LAMP">Language</a>
     <?php
-    $month=['janvier','février','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','décembre'];
-    $month[7] = 'août';
-    print_r($month);
+    if (isset($_GET['langage']) && ($_GET['serveur'])) {
+    echo 'Language : ' . $_GET['langage'] . ' serveur :  ' . $_GET['serveur'];
+  } else {
+    echo 'Cliquez sur le lien pour afficher les informations !';
+  };
     ?>
   </body>
 </html>
